@@ -1,0 +1,32 @@
+footer{
+    background: #23232E;
+    margin-top: 20px;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+footer ul li{
+    color: var(--lightGrey);
+    padding: 10px 10px;
+}
+
+footer ul li a{
+    font-weight: 500;
+    position: relative;
+}
+
+footer ul li a:hover::after, header ul li a.is-active::after{
+    content: '';
+    background: var(--white);
+    height: 3px;
+    position: absolute;
+    left: 1px;
+    z-index: -1;
+    bottom: 0;
+    right: -3px;
+}

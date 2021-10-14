@@ -1,0 +1,16 @@
+.card{
+    background: transparent;
+    border: 2px solid #FFC107;
+}
+
+.card p{
+    font-size: 14px;
+}
+
+.card span{
+    font-size: 5em;
+}
+
+.card-title{
+    text-align: center;
+}

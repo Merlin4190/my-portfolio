@@ -5,17 +5,21 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
 import { AppComponent } from './app.component';
-import { LeftSidebarComponent } from './components/left-sidebar/left-sidebar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { MeComponent } from './components/me/me.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LeftSidebarComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    MeComponent,
+    SkillsComponent
   ],
   imports: [
     BrowserModule,

@@ -22,13 +22,17 @@ header{
     width: 10px;
 }
 
+.p-search{
+    margin-left: 100px;
+}
+
 header ul{
     display: flex;
     align-items: center;
 }
 
 header ul li{
-    padding: 0 40px;
+    padding: 0 10px;
 }
 
 header ul li:first-child{
@@ -37,4 +41,21 @@ header ul li:first-child{
 
 header ul li:last-child{
     padding-right: 0;
+}
+
+header ul li a{
+    color: #FFC107;
+    font-weight: 500;
+    position: relative;
+}
+
+header ul li a:hover::after, header ul li a.is-active::after{
+    content: '';
+    background: var(--white);
+    height: 3px;
+    position: absolute;
+    left: 1px;
+    z-index: -1;
+    top: 0;
+    right: -3px;
 }

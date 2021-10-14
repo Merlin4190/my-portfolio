@@ -4,23 +4,21 @@
             <div class="col-sm-12 p-flex p-flex-align-center p-flex-justify-sb">
                 <ul>
                     <li class="hamburger">
-                        <a href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </a>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </li>
-                    <li><img src="assets/img/search.png" alt="The icon for search" width="20" /></li>
+                    <li class="p-search"><img class="p-cursor" src="assets/img/search.png" alt="The icon for search" width="20" /></li>
                 </ul>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Me</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Works</a></li>
-                    <li><a href="">Academics</a></li>
-                    <li><a href="">Experience</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Reach</a></li>
+                    <li><a href="" [routerLink]="['']" [routerLinkActive]="['is-active']" class="is-active">Home</a></li>
+                    <li><a href="" [routerLink]="['/me']" [routerLinkActive]="['is-active']">Me</a></li>
+                    <li><a href="" [routerLink]="['/skills']" [routerLinkActive]="['is-active']">Skills</a></li>
+                    <li><a href="" [routerLink]="['/academics']" [routerLinkActive]="['is-active']">Resume</a></li>
+                    <li><a href="" [routerLink]="['/projects']" [routerLinkActive]="['is-active']">Projects</a></li>
+                    <li><a href="" [routerLink]="['/reviews']" [routerLinkActive]="['is-active']">Reviews</a></li>
+                    <li><a href="" [routerLink]="['/articles']" [routerLinkActive]="['is-active']">Articles</a></li>
+                    <li><a href="" [routerLink]="['/reach']" [routerLinkActive]="['is-active']">Reach</a></li>
                 </ul>
             </div>
         </div>
