@@ -2,6 +2,22 @@ header{
     padding: 30px 0;
 }
 
+.navbar{
+    background: transparent !important;
+}
+
+.navbar-brand li a{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+.navbar-brand li a span{
+    padding: 5px;
+    background-color: #FFC107;
+    border: 1px solid var(--medGrey);
+}
+
 .hamburger{
     cursor: pointer;
 }
@@ -26,30 +42,30 @@ header{
     margin-left: 100px;
 }
 
-header ul{
+.nav-links ul{
     display: flex;
     align-items: center;
 }
 
-header ul li{
+.nav-links ul li{
     padding: 0 10px;
 }
 
-header ul li:first-child{
+/* header ul li:first-child{
     padding-left: 0;
 }
 
 header ul li:last-child{
     padding-right: 0;
-}
+} */
 
-header ul li a{
+.nav-links ul li a{
     color: #FFC107;
     font-weight: 500;
     position: relative;
 }
 
-header ul li a:hover::after, header ul li a.is-active::after{
+.nav-links ul li a:hover::after, .nav-links ul li a.is-active::after{
     content: '';
     background: var(--white);
     height: 3px;
@@ -58,4 +74,19 @@ header ul li a:hover::after, header ul li a.is-active::after{
     z-index: -1;
     top: 0;
     right: -3px;
+}
+
+@media screen and (min-width: 768px) {
+    .hamburger span{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .navbar-menu .show-menu-btn span{
+        display: block;
+    }
+
+    .nav-links li{
+        display: none;
+    }
 }

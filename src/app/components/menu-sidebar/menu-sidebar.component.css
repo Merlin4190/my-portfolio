@@ -1,0 +1,51 @@
+/*-- Responsive CSS --*/
+@media screen and (max-width:767px) {
+    .hide-menu-btn {
+        display: block;
+    }
+
+    .mobile-menu {
+        position: fixed;
+        background: #23232E;
+        right: 0;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .mobile-menu li {
+        width: 100%;
+    }
+
+    .mobile-menu li a {
+        padding: 15px 15px;
+        text-align: left;
+        color: var(--white);
+    }
+
+    .mobile-menu li a i {
+        width: auto;
+        font-size: 20px;
+    }
+
+    .p-search{
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+    #toggle-btn:checked ~ nav .navigation {
+        top: 0px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .p-menu-sidebar{
+        display: none;
+    }
+}

@@ -2,6 +2,10 @@
     margin-top: 4%;
 }
 
+.p-me-info{
+    text-align: justify;
+}
+
 .p-profile{
     background: url(/assets/img/dummy.jpg);
     background-size: cover;
@@ -14,6 +18,7 @@
 }
 
 .p-info{
-    padding-left: 50px;
+    padding: 0 50px;
+    font-size: 14px;
     border: 5px solid #FFC107;
 }

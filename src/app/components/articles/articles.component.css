@@ -1,0 +1,28 @@
+.card{
+    background: linear-gradient(
+        to bottom, rgba(0, 0, 0, 0)
+        30%, rgba(0, 0, 0, 0)
+        41%, rgba(0, 0, 0, 0.65)
+        100%
+    ), #7F8287;
+    opacity: 2;
+    /* border: 1px solid #FFFFFF; */
+    padding: 10px;
+}
+
+.card-body i{
+    font-size: 14px;
+}
+
+.card:hover{
+    background: #FFC107;
+}
+
+.card p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.card span{
+    font-size: 5em;
+}
